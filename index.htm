@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>Winner</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url('file:///D:/d/iphone/bg_cleanup.png');
+                        background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+		}
+		.image-container {
+			flex: 1;
+			margin: 20px;
+			max-width: 100%;
+			height: auto;
+			text-align: center;
+		}
+		.image {
+			max-width: 100%;
+			height: auto;
+		}
+		.form-container {
+			flex: 1;
+			margin: 20px;
+			max-width: 100%;
+			height: auto;
+		}
+		.form {
+			background-color: #eee;
+			padding: 20px;
+			border-radius: 5px;
+		}
+		.form input[type=text], .form input[type=email], .form input[type=tel] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 4px;
+			background-color: #fff;
+		}
+		.form input[type=submit] {
+			background-color: #333;
+			color: #fff;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+		}
+		.form input[type=submit]:hover {
+			background-color: #fff;
+			color: #333;
+			border: 1px solid #333;
+		}
+		h1 {
+			text-align: center;
+		}
+		.timer {
+			font-size: 70px;
+			text-align: center;
+			margin-bottom: 20px;
+                        text-color: #ffffff;
+		}
+		@media screen and (min-width: 768px) {
+			.container {
+				flex-wrap: nowrap;
+			}
+			.image-container {
+				margin-right: 20px;
+			}
+			.form-container {
+				margin-left: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+		<h1 style="color:white">Congratulations</h1>
+        <h1 style="color:white">You are <strong>Today's Winner</strong></h1>
+		<div class="timer">00:00:00</div>
+	</header>
+	<div class="container">
+		<div class="image-container">
+			<img class="image" src="file:///D:/d/iphone/download__1_-removebg-preview.png" width="400" height="400">
+		</div>
+		<div class="form-container">
+			<form class="form">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="fname">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lname">
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" name="phone">
+				<label for="email">Email</label>
+                <input type="email" id="email" name="email">
+				<button type="submit">Submit</button>
+
+                </form>
+        </div>
+        </div>
+        </body>
+        </html>
